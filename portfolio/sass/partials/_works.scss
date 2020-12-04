@@ -1,0 +1,65 @@
+.works {
+	overflow: hidden;
+	&__container {
+		padding: 10px 10px 0;
+		&--small {
+			padding: 40px 20px 0;
+		}
+	}
+	&__box {
+		padding: 10px 10px 0;
+		&--small {
+			padding: 60px 30px 0;
+		}
+	}
+	&__title {
+		font-size: 26px;
+        margin-bottom: 40px;
+        color: $dark-main;
+		&--main {
+			margin-bottom: 40px;
+			font-size: 26px;
+        	color: $white;
+        	background-color: $dark-main;
+        	padding: 20px 0;
+		}
+	}
+	&__button {
+		border: none;
+		cursor: pointer;
+		margin: 3% 1% 1%;
+		display: inline;
+		padding: 2%;
+		width: 30%;
+		border-bottom: 2px solid $dark-main;
+		text-align: center;
+		background-color: $white;
+		&:hover {
+			background-color: $dark-main;
+			border-radius: 1rem;
+		}
+		&:hover .works__button__link {
+			color: $white;
+		}
+		&__link {
+			text-decoration: none;
+			font-size: 15px;
+			color: $dark-main;
+		}
+	}
+}
+.more--works {
+	margin-top: 12%;
+}
+
+@media screen and (max-width: 767px) {
+	.more__link {
+		margin: 1%;
+		max-height: 100px;
+	}
+	.more--works {
+		margin: 30%;
+		max-height: 100px;
+				width: 50%;
+	}
+}

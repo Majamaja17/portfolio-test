@@ -1,0 +1,19 @@
+.jumbotron {
+	background-image: url(../images/bg2.jpg);
+    padding: 150px 0 500px;
+	animation: jumbotron_bg 300s linear infinite alternate;
+	&__title {
+		color: $dark-main;
+		font-size: 56px;
+        padding-bottom: 40px;
+	}
+}
+
+@media only screen and (max-width: 380px) {
+	.jumbotron {
+		&__title {
+		font-size: 36px;
+        padding-bottom: 40px;
+    	}
+	}
+}

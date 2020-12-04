@@ -1,0 +1,21 @@
+.contact {
+	background-image: url(../images/bg2.jpg);
+	animation: jumbotron_bg 300s linear infinite alternate;
+	&__title {
+		font-size: 24px;
+        margin-bottom: 20px;
+        color: $dark-main;
+	}
+	a {
+		border: none; 
+		margin: 2%;
+		text-decoration: none;
+		cursor: pointer;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.contact__box:first-of-type {
+		margin-bottom: 50px;
+	}
+}

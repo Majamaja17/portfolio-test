@@ -1,0 +1,62 @@
+.skills {
+	background-image: url(../images/bg2.jpg);
+	animation: jumbotron_bg 450s linear infinite alternate;
+	&__box {
+		&--inner:hover .skills__content {
+			display: block;
+		}
+		&--inner:hover .skills__subtitle {
+			display: none;
+		}
+		&--inner:hover .skills__title {
+			font-size: 35px;
+			line-height: 35px;
+			padding-top: 20px;
+		}
+		&--inner {
+			padding: 40px 20px 20px;
+			height: 300px;
+			border-radius: 1rem;
+			margin: 20px;
+			background-color: $semi-transparent;
+			&:hover {
+				background-color: $white;
+			}
+		}
+	}
+	&__title {
+		font-size: 58px;
+		line-height: 35px;
+		padding-top: 80px;
+	}
+	&__subtitle {
+		font-size: 18px;
+		line-height: 20px;
+		padding-top: 20px;
+	}
+	&__content {
+		line-height: 25px;
+		font-size: 16px;
+		padding: 10px 0 80px;
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+
+	.skills {
+		background-image: none;
+		&__box--inner {
+			background-color: $dark-main;
+			&:hover {
+				background-color: $white;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 380px) {
+	.skills__box--inner {
+		height: 350px;
+	}
+}
